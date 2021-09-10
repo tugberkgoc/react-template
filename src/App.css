@@ -34,3 +34,14 @@
 .MuiBreadcrumbs-ol {
   margin-top: 30px !important;
 }
+
+.firstPartTitle {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.firstPartTitle > .MuiSelect-select {
+  width: 16vw;
+}

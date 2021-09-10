@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   Container,
   Accordion,
@@ -11,6 +11,7 @@ import {
 } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import { ExpandMore as ExpandMoreIcon } from '@material-ui/icons'
+import FirstPart from './FirstPart'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -29,6 +30,8 @@ function handleClick (event) {
 
 const CrmDetails = ({ name }) => {
   const classes = useStyles()
+
+  const [newState, setNewState] = useState(false)
 
   return (
     <div>
@@ -60,6 +63,14 @@ const CrmDetails = ({ name }) => {
             <Typography color='textPrimary'>Crm Details</Typography>
           </Breadcrumbs>
         </Paper>
+
+        <FirstPart
+          state={newState}
+          setState={setNewState}
+          title='Tugberk Goc'
+          subtitle='Software Engineer'
+          address='145 SW, 13th Street, APT 745'
+        />
       </Container>
     </div>
   )

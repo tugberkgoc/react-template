@@ -52,7 +52,7 @@ export default function MenuAppBar (props) {
           </div>
           <div className={classes.spacer}></div>
           <div>
-            <IconButton
+            {/* <IconButton
               aria-label={'account of current user'}
               aria-controls='menu-appbar'
               aria-haspopup='true'
@@ -61,7 +61,7 @@ export default function MenuAppBar (props) {
               size={'medium'}
             >
               <Notifications />
-            </IconButton>
+            </IconButton> */}
             <Menu
               id='menu-appbar'
               anchorEl={anchorEl}
