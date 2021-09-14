@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { makeStyles, withStyles } from '@material-ui/core/styles'
-import { AccountCircle, Notifications } from '@material-ui/icons'
+import { AccountCircle } from '@material-ui/icons'
 import {
   AppBar,
   Toolbar,
@@ -118,14 +118,6 @@ export default function Header (props) {
               <MenuItem value={30}>Brazil</MenuItem>
             </Select>
           </FormControl>
-          <div>
-            <IconButton
-              className={classes.notificationIconButton}
-              size={'medium'}
-            >
-              <Notifications />
-            </IconButton>
-          </div>
           <div>
             <IconButton
               aria-label={'account of current user'}
